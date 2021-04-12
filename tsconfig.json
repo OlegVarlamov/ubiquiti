@@ -1,25 +1,36 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react"
-  },
-  "include": [
-    "src"
-  ]
+	"compilerOptions": {
+		"target": "es6",
+		"module": "esnext",
+		"jsx": "react",
+		"lib": ["dom", "dom.iterable", "scripthost", "esnext"],
+		"baseUrl": "./src",
+		"allowJs": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true,
+		"outDir": "./dist",
+		"rootDir": "./src",
+		"removeComments": true,
+		"noEmitOnError": true,
+		"noImplicitAny": false,
+		"noLib": false,
+		"preserveConstEnums": true,
+		"declaration": false,
+		"suppressImplicitAnyIndexErrors": true,
+		"sourceMap": true,
+	},
+	"filesGlob": ["./src/**/*.ts", "./src/**/*.tsx", "!./node_modules/**"],
+	"include": ["./src/**/*"],
+	"exclude": ["node_modules", "**/*.spec.ts", "build"],
+	"rules": {
+		"quotemark": "single",
+		"autoFixOnSave": true
+	}
 }
