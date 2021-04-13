@@ -1,5 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
+## Before run
+
+Create .env file in project root.<br />
+Paste REACT_APP_API_ROOT="http://api-address.online/" into .env file.
+
+### `yarn install`
+
 ## Available Scripts
 
 In the project directory, you can run:
