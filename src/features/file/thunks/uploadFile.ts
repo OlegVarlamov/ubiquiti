@@ -11,14 +11,8 @@ export default createAsyncThunk("file/upload", async (params: UploadFileParams, 
 		});
 		const data = new FormData();
 		data.append("file", params.file);
-		const config = {
-			headers: {
-				"content-type": "multipart/form-data",
-			},
-		};
 		const response: AxiosResponse = await apiClient.post<UploadFileResponse>(`/upload/${params.uploadId}`, data, {
 			cancelToken: source.token,
-			...config,
 			...params.axiosConfig,
 		});
 		return response.data;
